@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The menu</title>
+</head>
+<body>
+    <h2>Вам понадобится:</h2>
+    {% for ingridient, qtty in result.items %}
+    <li> {{ ingridient }} - {{ qtty }} </li>
+    {% endfor %}
+    </body>
+</html>

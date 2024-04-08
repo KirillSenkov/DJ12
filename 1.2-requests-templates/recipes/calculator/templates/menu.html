@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The menu</title>
+</head>
+<body>
+    <h1>Выберите блюдо:</h1>
+    {% for dish in menu %}
+    <a href={{ dish_page }}?dish={{dish}}>- {{dish}}<br></a>
+    {% endfor %}
+</body>
+</html>
